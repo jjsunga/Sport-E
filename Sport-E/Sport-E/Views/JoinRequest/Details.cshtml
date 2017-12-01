@@ -1,0 +1,41 @@
+﻿@model Sport_E.Controllers.JoinRequestBase
+
+@{
+    ViewBag.Title = "Join Request";
+}
+
+<div>
+    <h4>Join Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email_j)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email_j)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event_j)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event_j)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicationStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicationStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Reject", "Edit", new { id = Model.Id + " Rejected" }) |
+    @Html.ActionLink("Accept", "Edit", new { id = Model.Id + " Accepted" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

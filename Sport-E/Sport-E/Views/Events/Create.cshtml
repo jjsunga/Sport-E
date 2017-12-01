@@ -1,0 +1,286 @@
+﻿@model Sport_E.Controllers.EventAddForm
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Create";
+    var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+    string userid = User.Identity.GetUserName();
+}
+<h2>Create</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>EventBase</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.EventCreator, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.EventCreator, new { @class = "form-control", @readonly = "readonly", @Value = userid })
+                @Html.ValidationMessageFor(model => model.EventCreator, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <span class = "control-label col-md-2" style="font-weight:bold" >Time</span>
+            <div class="col-md-10">
+                Hour:
+
+                @{
+                    List<SelectListItem> hr = new List<SelectListItem>();
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "01",
+                        Value = "1"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "02",
+                        Value = "2"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "03",
+                        Value = "3"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "04",
+                        Value = "4"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "05",
+                        Value = "5"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "06",
+                        Value = "6"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "07",
+                        Value = "7"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "08",
+                        Value = "8"
+                    });
+                    hr.Add(new SelectListItem
+                    {
+                        Text = "09",
+                        Value = "9"
+                    });
+
+                    for (int i = 10; i<25; i++) {
+                        hr.Add(new SelectListItem
+                        {
+                            Text = i.ToString(),
+                            Value = i.ToString()
+                        });
+                    }
+                }
+                @Html.DropDownListFor(model => model.Hour, hr, new { @class = "text-danger" , @style = "color:black;" })
+
+                Minute:
+
+                @{
+                    List<SelectListItem> ms = new List<SelectListItem>();
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "00",
+                        Value = "0"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "01",
+                        Value = "1"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "02",
+                        Value = "2"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "03",
+                        Value = "3"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "04",
+                        Value = "4"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "05",
+                        Value = "5"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "06",
+                        Value = "6"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "07",
+                        Value = "7"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "08",
+                        Value = "8"
+                    });
+                    ms.Add(new SelectListItem
+                    {
+                        Text = "09",
+                        Value = "9"
+                    });
+
+                    for (int i = 10; i < 60; i++)
+                    {
+                        ms.Add(new SelectListItem
+                        {
+                            Text = i.ToString(),
+                            Value = i.ToString()
+                        });
+                    }
+                }
+                @Html.DropDownListFor(model => model.Minute, ms, new { @class = "text-danger", @style ="color:black;" })
+
+
+
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Capacity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Capacity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Capacity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.AgeGroup, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @{
+                    List<SelectListItem> listItems = new List<SelectListItem>();
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "18-21",
+                        Value = "18-21"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "21-30",
+                        Value = "21-30",
+                        Selected = true
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "40-50",
+                        Value = "40-50"
+                    });
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "50-65",
+                        Value = "50-65"
+                    }); 
+                    listItems.Add(new SelectListItem
+                    {
+                        Text = "Any",
+                        Value = "Any"
+                    });
+                }
+                @Html.DropDownListFor(model => model.AgeGroup, listItems, new { @class = "text-danger" , @style = "color:black;" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Street, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Province, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Province, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Province, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PostalCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PostalCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Country, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <label class="radio-inline"><input type="radio" name="Gender" value="Female" />Female</label>
+                <label class="radio-inline"><input type="radio" name="Gender" value="Male" />Male</label>
+                <label class="radio-inline"><input type="radio" name="Gender" value="Other" />Other</label>
+                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SkillLevel, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <label class="radio-inline"><input type="radio" name="SkillLevel" value="Beginner" />Beginner</label>
+                <label class="radio-inline"><input type="radio" name="SkillLevel" value="Novice" />Novice</label>
+                <label class="radio-inline"><input type="radio" name="SkillLevel" value="Professional" />Professional</label>
+                @Html.ValidationMessageFor(model => model.SkillLevel, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PhotoUpload, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhotoUpload, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PhotoUpload, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

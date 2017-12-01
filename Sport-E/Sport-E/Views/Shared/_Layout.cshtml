@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sport-E</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/js.cookie.js"></script>
+    @{
+        var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+        Sport_E.Models.ApplicationDbContext db = new Sport_E.Models.ApplicationDbContext();
+       // var notifications = db.Notification.Where(e => e.ToEmail.Contains(HttpContext.Current.User.Identity.Name));
+        //notifications = notifications.Where(e => e.Read.Equals(false));
+        //var newNotifications = notifications.Count();
+
+        var reviewEvents = db.Events.Where(e => e.PublicationStatus.Contains("Under Review"));
+        var badgeReviewEvents = reviewEvents.Count();
+    }
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/home.css">
+    @RenderSection("Styles", false)
+
+    <!--<link rel="stylesheet" type="text/css" href="~/Content/upcoming.css">-->
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Sport-E", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @if (userAccount.IsAuthenticated)
+                    {
+
+
+                        <li id="menu-toggle">@Html.Raw(String.Format("<a href=\"#\" class = 'selected' >Menu</a>"))</li>
+
+                        <li>@Html.ActionLink("Calendar", "UpcomingEvents", "Calendar", new { requestedDate = DateTime.Now.Month.ToString() + " " + DateTime.Now.Year.ToString() }, null)</li>
+                        
+                        if (userAccount.IsAdmin)
+                        {
+                            <li><a href="@Url.Action("Index", "Admin")">Review Events
+                            @if (badgeReviewEvents > 0)
+                            {
+                                      <span class="badge">@badgeReviewEvents</span>
+                            }
+                             </a>
+                            </li>
+                        }
+                        <li>@Html.ActionLink("Review Join Requests", "Index", "JoinRequest")</li>
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper" id="wrapper">
+
+        <!--Sidebar-->
+        <div class="sidebar-wrapper" id="sidebar-wrapper">
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="navItem">@Html.ActionLink("User Profile", "Details", "UserProfiles")</li>
+                <li class="navItem">@Html.ActionLink("My Events", "MyEvents", "Events", new { requestedDate = DateTime.Now.Month.ToString() + " " + DateTime.Now.Year.ToString() }, null)</li>
+                <li class="navItem">@Html.ActionLink("Attended Events", "Past", "Events")</li>
+                <!--<li class="navItem">Html.ActionLink("Create Event", "Create", "Events")</li>-->
+                <li class="navItem">@Html.ActionLink("Upcoming Events", "Index", "Events")</li>
+                <li style="cursor: pointer;" onclick="javascript: document.getElementById('logoutForm').submit()"><a herf="#">Log Out</a></li>
+            </ul>
+        </div>
+
+        <!--Page Content-->
+        <div class="page-content-wrapper" id="page-content-wrapper">
+            <div class="container-fluid" id="container-fluid">
+
+                <!-- Renders the current loaded page here -->
+                @RenderBody()
+
+                <!--
+                    example render of a page that is not the body
+
+
+                                (at symbol)if (userAccount.IsAuthenticated)
+                {
+                    (at symbol)RenderPage("~/Views/Shared/RenderJumb.cshtml")
+                }
+
+                -->
+
+                <div class="container body-content">
+                    <hr />
+                    <footer>
+                        <p>&copy; @DateTime.Now.Year - Team 15</p>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    @if (!(userAccount.IsAuthenticated))
+    {
+        <script>
+            Cookies.set("menuOutB", "false");
+        </script>
+    }
+
+    <!-- Menu toggle script -->
+    <script>
+        var menuOutBoolean = Cookies.get("menuOutB") || false;
+
+        if (menuOutBoolean == true || menuOutBoolean == "true") {
+            $("#wrapper").toggleClass("menuDisplayed");
+        }
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            if (menuOutBoolean == "true") {
+                Cookies.set("menuOutB", "false");
+            } else {
+                Cookies.set("menuOutB", "true");
+            }
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

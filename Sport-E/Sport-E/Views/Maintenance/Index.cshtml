@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Sport_E.Controllers.UserDelete>
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<br />
+
+<h3>Please confirm again that you want to delete your account!</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color ">
+        <a class="btn btn-default" href="javascript:document.getElementById('logoutForm').submit()">DELETE</a> |
+        @Html.ActionLink("Cancel", "Index", "Home")
+    </div>
+}
+

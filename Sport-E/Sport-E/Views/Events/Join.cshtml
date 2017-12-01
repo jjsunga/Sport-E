@@ -1,0 +1,16 @@
+﻿@model Sport_E.Controllers.EventBase
+@{
+    ViewBag.Title = "Event";
+}
+<h2>@Html.DisplayFor(model => model.EventName)</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        You have joined the event.
+    </dl>
+
+
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

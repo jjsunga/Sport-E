@@ -1,0 +1,122 @@
+﻿@model Sport_E.Controllers.EventBase
+@{
+    ViewBag.Title = "Review";
+}
+
+<h2>Review</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EventName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventCreator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventCreator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeGroup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeGroup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Province)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Province)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SkillLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SkillLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicationStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicationStatus)
+        </dd>
+
+    </dl>
+ 
+</div>
+<p>
+    @Html.ActionLink("Reject", "Edit", new {  id = Model.Id + " Rejected" }) |
+    @Html.ActionLink("Accept", "Edit", new { id = Model.Id + " Accepted" })
+</p>

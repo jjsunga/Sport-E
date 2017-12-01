@@ -1,0 +1,885 @@
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Antlr3.Runtime.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\AutoMapper.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\EntityFramework.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\EntityFramework.SqlServer.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.Web.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Newtonsoft.Json.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Owin.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Helpers.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Mvc.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Optimization.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Razor.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\WebGrease.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\AutoMapper.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.Razor.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\EntityFramework.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\agam\Dropbox\BTS\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\ApplicationInsights.config
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\csc.exe
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\csi.exe
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Sport-E.dll.config
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Sport-E.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Sport-E.pdb
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Antlr3.Runtime.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\AutoMapper.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\EntityFramework.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\EntityFramework.SqlServer.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Web.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Newtonsoft.Json.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Owin.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Helpers.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Mvc.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Optimization.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Razor.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Razor.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\WebGrease.dll
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\AutoMapper.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.Razor.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\EntityFramework.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Agam\Desktop\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\ApplicationInsights.config
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\csc.exe
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\csi.exe
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Sport-E.dll.config
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Sport-E.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Sport-E.pdb
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Antlr3.Runtime.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\AutoMapper.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\EntityFramework.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\EntityFramework.SqlServer.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Web.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Newtonsoft.Json.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Owin.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Helpers.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Mvc.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Optimization.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Razor.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Razor.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\WebGrease.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\AutoMapper.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.Razor.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\EntityFramework.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Agam\Dropbox\Sport-E - Copy\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\AutoMapper.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.Razor.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\EntityFramework.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Jadrian\Desktop\Team15Repo-master\Team15Repo-master\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\AutoMapper.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.Razor.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\EntityFramework.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\azoeb\Desktop\Workspace\Combined Sport-E\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\AutoMapper.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.Razor.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\EntityFramework.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Agam\Desktop\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\Agam\Desktop\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Agam\Desktop\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Jadrian\Desktop\BTSGIT\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Antlr3.Runtime.pdb
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\AutoMapper.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AI.Web.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.ApplicationInsights.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Newtonsoft.Json.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.Helpers.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.Mvc.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.Optimization.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.Razor.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.WebPages.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.WebPages.Deployment.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\System.Web.WebPages.Razor.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\EntityFramework.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\EntityFramework.SqlServer.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\addogra\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\Agam\Dropbox\BTS\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\azoeb\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.InitialCreate.resources
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.csproj.GenerateResource.Cache
+C:\Users\NICE\Desktop\3 22\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.eventrating.resources
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.InitialCreate.resources
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.eventrating.resources
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.csproj.GenerateResource.Cache
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\NICE\Desktop\bts\Team15Repo-master\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.InitialCreate.resources
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport_E.Migrations.eventrating.resources
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csproj.GenerateResource.Cache
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\azoeb\Desktop\Workspace\New\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\ZAM\Desktop\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\NICE\Desktop\btss\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\NICE\Desktop\btsss\Sport-E\Sport-E\obj\Debug\Sport-E.pdb
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\ApplicationInsights.config
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.exe.config
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\csc.rsp
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.exe
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\csi.rsp
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.AppContext.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.exe.config
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\vbc.rsp
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll.config
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\Sport-E.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\bin\Sport-E.pdb
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.csprojResolveAssemblyReference.cache
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.dll
+C:\Users\addogra\Documents\GitHub\Team15Repo\Sport-E\Sport-E\obj\Debug\Sport-E.pdb

@@ -1,0 +1,149 @@
+﻿div.CommentSection{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    /*background: #c7c7c7;*/
+
+
+}
+
+a img{
+    border: none;
+}
+
+/*wrapper*/
+div.contain-comment-wrapper{ 
+    
+    width: 750px;
+    border: 1px solid #a1a1a1;
+    margin: 10px auto 10px auto;
+    height: 750px;
+    background: #fff;
+
+}
+
+div.page-data{
+
+    width: auto;
+    height: auto;
+    color: $666; /*colour text*/
+    margin: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    
+}
+
+div.comment-wrapper{
+
+    margin: 10px;
+    border: 1px solid #e1e1e1;
+    height: auto;
+    width: auto;
+    color: 444;
+
+}
+
+h3.comment-title{
+
+    height:40px;
+    line-height: 37px;
+    font-size: 14px;
+    margin: 0 5px 0 5px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+
+}
+
+/*Holds ul of comments*/
+div.comments{
+
+    /*height is auto so that the li comments stored in the comments
+         ul fit automatically*/
+    height:auto; 
+    font-size: 13px;
+    margin: 10px 5px 5px 5px;
+    color: #555;
+
+}
+
+/*holds li of comments*/
+ul.commentsul{
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
+/*Individual comments*/
+ul.commentsul li.commentli{
+
+    list-style-type: none;
+    /*background: #fffff5; /*comment background colour*/
+    height: auto; /*must be auto so it adjusts to its content's size*/
+    width:auto;
+    margin: 5px 0 5px 0;
+    border: 1px solid #e1e1e1;
+    overflow: hidden; /*fixes problems with overflows*/
+
+}
+
+/*individual comment hover effect*/
+ul.commentsul li.commentli:hover{
+
+    /*control highlight color when mouse hovers over comment*/
+    background-color: #FFFFDB;
+    
+}
+
+/*div that holds the user image*/
+ul.commentsul li.commentli .user-img{
+
+    float: left;
+    /*height: auto;*/
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 0 0; /*place a margin between the image and the comment body*/
+
+}
+
+/*the image inside of the above specified div*/
+ul.commentsul li.commentli .user-img .user-img-pic{
+
+    width: 55px;
+    height: auto;
+    margin: 4px;
+    border: 1px solid #a1a1a1;
+}
+
+/*wraps the username and comment text into one body*/
+.comment-body{
+    
+    width:auto;
+
+
+}
+
+/*heading for username*/
+ul.commentsul li.commentli h3.username{
+
+    height: 25px;   
+    line-height: 22px;
+    color: blue;
+    font-size: 11px;
+    margin: 0 0 0 10px; /*creates space between image and username*/
+
+}
+
+/*div that holds comment text*/
+ul.commentsul li.commentli .comment-text{
+
+    display: block;
+    width: auto;
+    font-size: 11px;
+
+
+}

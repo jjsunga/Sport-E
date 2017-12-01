@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Sport_E.Controllers.JoinRequestBase>
+@section Styles {
+    <link href="@Url.Content("~/Content/joinrequest.css")" rel="stylesheet" type="text/css" />
+}
+
+@{
+    ViewBag.Title = "Review Join Requests";
+}
+
+<h2>Review Join Requests</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email_j)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Event_j)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublicationStatus)
+        </th>
+        <th style="display:none;"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="clickable" onclick="this.children[3].children[0].click();">
+            <td>
+                @Html.DisplayFor(modelItem => item.Email_j)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event_j)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublicationStatus)
+            </td>
+            <td style="display:none;">
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

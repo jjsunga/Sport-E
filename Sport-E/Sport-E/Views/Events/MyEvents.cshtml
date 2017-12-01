@@ -1,0 +1,2453 @@
+﻿@model IEnumerable<Sport_E.Models.Event>
+@{
+    ViewBag.Title = "My Events";
+
+    var dateTime = new DateTime(Convert.ToInt32(ViewBag.RequestedYear), Convert.ToInt32(ViewBag.RequestedMonth), 1, 1, 1, 1);
+    var previousMonth = dateTime.AddMonths(-1);
+    var nextMonth = dateTime.AddMonths(1);
+    var one = dateTime;
+    var two = dateTime.AddDays(1);
+    var three = dateTime.AddDays(2);
+    var four = dateTime.AddDays(3);
+    var five = dateTime.AddDays(4);
+    var six = dateTime.AddDays(5);
+    var seven = dateTime.AddDays(6);
+    var eight = dateTime.AddDays(7);
+    var nine = dateTime.AddDays(8);
+    var ten = dateTime.AddDays(9);
+    var eleven = dateTime.AddDays(10);
+    var twelve = dateTime.AddDays(11);
+    var thirteen = dateTime.AddDays(12);
+    var fourteen = dateTime.AddDays(13);
+    var fifteen = dateTime.AddDays(14);
+    var sixteen = dateTime.AddDays(15);
+    var seventeen = dateTime.AddDays(16);
+    var eightteen = dateTime.AddDays(17);
+    var nineteen = dateTime.AddDays(18);
+    var twenty = dateTime.AddDays(19);
+    var twentyone = dateTime.AddDays(20);
+    var twentytwo = dateTime.AddDays(21);
+    var twentythree = dateTime.AddDays(22);
+    var twentyfour = dateTime.AddDays(23);
+    var twentyfive = dateTime.AddDays(24);
+    var twentysix = dateTime.AddDays(25);
+    var twentyseven = dateTime.AddDays(26);
+    var twentyeight = dateTime.AddDays(27);
+    var twentynine = dateTime.AddDays(28);
+    var thirty = dateTime.AddDays(29);
+    var thirtyone = dateTime.AddDays(30);
+
+    Sport_E.Models.ApplicationDbContext db = new Sport_E.Models.ApplicationDbContext();
+    var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+    var events = db.Events.Where(e => e.EventDate.Month.Equals(dateTime.Month));
+    events = events.Where(e => e.EventDate.Year.Equals(dateTime.Year));
+    events = events.Where(e => e.EventCreator.Equals(userAccount.Name));
+    /*
+    var allEvents = db.Events.Where(e => e.EventDate.Month.Equals(dateTime.Month));
+    allEvents = allEvents.Where(e => e.EventDate.Year.Equals(dateTime.Year));
+
+    var eventsUserIsIn = db.JoinRequest.Where(e => e.Email_j.Equals(userAccount.Name));
+    eventsUserIsIn = eventsUserIsIn.Where(e => e.PublicationStatus.Equals("Accepted"));
+    //var eventsforUser;
+    foreach (var item in eventsUserIsIn)
+    {
+        events.Concat(allEvents.Where(e => e.Id.Equals(item.Event_j)));
+    }
+    */
+    //var user = db.UserProfiles.Where(u => u.Email.Equals(userAccount.Name)).SingleOrDefault(); //grab a user profile
+    //var eventsjoined = events.Where(e => e.UserProfiles.Contains(user)); //grab iqueryable of events according to the user profile above
+    //events = events.Union(eventsjoined);
+}
+@section Styles {
+    <link href="@Url.Content("~/Content/myevents.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/calendar.css")" rel="stylesheet" type="text/css" />
+}
+
+<!-- Upcoming events -->
+<h2>My Events</h2>
+<hr />
+
+<table class="table">
+    <tr>
+        <table border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td colspan="7" align="center">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td align="left" width="250">
+                                        @Html.ActionLink("Previous Month", "MyEvents", new { requestedDate = previousMonth.Month.ToString() + " " + previousMonth.Year.ToString() })
+                                    </td>
+                                    <th align="center" width="300"> @dateTime.ToString("MMMM") @dateTime.Year</th>
+                                    <td align="right" width="250">
+                                        @Html.ActionLink("Next Month", "MyEvents", new { requestedDate = nextMonth.Month.ToString() + " " + nextMonth.Year.ToString() })
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="center" width="150">SUN</th>
+                    <th align="center" width="150">MON</th>
+                    <th align="center" width="150">TUE</th>
+                    <th align="center" width="150">WED</th>
+                    <th align="center" width="150">THU</th>
+                    <th align="center" width="150">FRI</th>
+                    <th align="center" width="150">SAT</th>
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (one.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>1</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(1)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (two.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (two.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>2</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(2)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (three.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (three.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>3</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(3)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (four.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (four.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>4</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(4)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (five.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (five.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>5</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(5)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (six.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (six.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>6</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(6)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seven.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (seven.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>7</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(7)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eight.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (eight.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>8</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(8)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nine.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (nine.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>9</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(9)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (ten.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (ten.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>10</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(10)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eleven.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (eleven.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>11</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(11)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twelve.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twelve.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>12</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(12)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (thirteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>13</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(13)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fourteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (fourteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>14</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(14)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (fifteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (fifteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>15</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(15)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (sixteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (sixteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>16</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(16)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (seventeen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (seventeen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>17</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(17)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (eightteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (eightteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>18</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(18)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (nineteen.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (nineteen.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>19</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(19)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twenty.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twenty.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>20</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(20)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyone.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentyone.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>21</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(21)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentytwo.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentytwo.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>22</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(22)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentythree.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentythree.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>23</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(23)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfour.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentyfour.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>24</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(24)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyfive.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentyfive.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>25</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(25)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentysix.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Tuesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentysix.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>26</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(26)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyseven.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Wednesday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentyseven.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>27</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(27)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentyeight.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Thursday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentyeight.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>28</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(28)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (twentynine.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Friday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (twentynine.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>29</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(29)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirty.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Saturday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (thirty.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>30</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(30)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                        else if (thirtyone.DayOfWeek.ToString() == "Sunday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;">
+                        @if (thirtyone.DayOfWeek.ToString() == "Monday")
+                        {
+                            <div align="left" style="font-size:17pt;vertical-align:top;"><b>31</b></div>
+                            <br />
+                            foreach (var oneEvent in events.Where(e => e.EventDate.Day.Equals(31)))
+                            {
+                                @Html.ActionLink(oneEvent.EventName, "Details", "Events", new { id = oneEvent.Id }, null)
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;"> </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;"> </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;"> </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;"> </td>
+                    <td height="150" width="150" align="center" style="vertical-align:top;"> </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </tr>
+</table>
+
+
+
+<br />
+<br />
+<br />
+<table id="uptable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventCreator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgeGroup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SkillLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublicationStatus)
+        </th>
+        <th style="display:none;"></th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr id="clickable" onclick="this.children[9].children[0].click();">
+            <td>
+                @Html.DisplayFor(modelItem => item.EventName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventCreator)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Street),
+                @Html.DisplayFor(modelItem => item.City),
+                @Html.DisplayFor(modelItem => item.Province),
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SkillLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublicationStatus)
+            </td>
+            <td style="display:none;">
+                <!--Html.ActionLink("Edit", "Edit", new { id = item.Id }) |-->
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+                <!--|
+                Html.ActionLink("Delete", "Delete", new { id = item.Id })-->
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,198 @@
+﻿@model Sport_E.Controllers.EventWithPlayers
+@{
+    ViewBag.Title = "Details";
+    var title = Model.EventName;
+    var ctitle = "Comments for event: " + Model.EventName;
+    var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+    var email = userAccount.Name;
+}
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="~/Content/comment.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/profile.css">
+}
+
+
+<div id="bg">
+    <div>
+        <div id="info">
+            <div>
+                <img class="left img img-responsive" src="/eventpicturephoto/@Model.Id" alt="EventPicture" title="EventPicture" />
+            </div>
+
+            <span class="name">
+                @Html.DisplayFor(model => model.EventName)
+            </span>
+
+            <hr />
+
+            <h4>
+                @Html.ActionLink("Join this event", "Join", new { id = Model.Id }) |
+                @Html.ActionLink("Leave a comment", "AddComment", new { id = Model.Id })
+                <br />
+                @if (email == Model.EventCreator)
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.id })
+
+                }
+            </h4>
+            <h5><b>Creator:</b> @Model.EventCreator</h5>
+            <h5><b>Date:</b> @Model.EventDate.ToLongDateString()</h5>
+            <h5><b>Time:</b> @Model.EventDate.ToShortTimeString()</h5>
+            <h5><b>Rating:</b> @Html.DisplayFor(model => model.Rating)/5 (rated by @Html.DisplayFor(model => model.numRatings) users)</h5>
+
+        </div>
+
+
+
+
+        <div class="eventinfo">
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        <span><b>@Html.DisplayNameFor(model => model.Capacity)</b></span>
+
+                        @{int i = 0;}
+                        @foreach (var item in Model.UserProfiles)
+                        {
+                            i++;
+                        }
+                        @i/@Html.DisplayFor(model => model.Capacity)
+                    </p>
+                    <p>
+                        <span><b>Age Group</b></span>
+
+                        @Html.DisplayFor(model => model.AgeGroup)
+                    </p>
+
+
+                    <p>
+                        <span>
+                            <b>
+                                @Html.DisplayNameFor(model => model.Gender) :
+                            </b>
+                        </span>
+
+                        @Html.DisplayFor(model => model.Gender)
+                    </p>
+
+                    <p>
+                        <span>
+                            <b>
+                                @Html.DisplayNameFor(model => model.Players) :
+                            </b>
+                        </span>
+                        <br />
+                        @foreach (var item in Model.UserProfiles)
+                        {
+                            <span>@item.Email</span>
+                            <br/>
+                        }
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+
+
+
+                    <p>
+                        <span>
+                            <b>
+                                @Html.DisplayNameFor(model => model.SkillLevel) : 
+                            </b>
+                        </span>
+
+                        @Html.DisplayFor(model => model.SkillLevel)
+
+                    </p>
+
+                    <p>
+                        <span>
+                            <b>
+                                @Html.DisplayNameFor(model => model.PublicationStatus) :
+                            </b>
+                        </span>
+                        @Html.DisplayFor(model => model.PublicationStatus)
+
+                    </p>
+
+                    <p>
+                        <span><b>Location : </b></span>
+
+                        @Html.DisplayFor(model => model.Street),
+                        @Html.DisplayFor(model => model.City),
+                        @Html.DisplayFor(model => model.Province),
+                        <br />
+                        @Html.DisplayFor(model => model.Country),
+                        @Html.DisplayFor(model => model.PostalCode)
+
+
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--Comments Div-->
+        <div class="CommentSection">
+
+            <div class="contain-comment-wrapper">
+                <!--refer as wrapper-->
+                
+                <div class="page-data">
+                    <!-- Page data -->
+                    <h3>@ctitle</h3>
+                </div>
+                <div class="comment-wrapper">
+                    <h3 class="comment-title">User Comments:</h3>
+                    <div class="comments">
+                        <!--Comments stored in here-->
+                        <ul class="commentsul">
+                            <!--hold comment li's-->
+                            @if (Model.Comments.Count() > 0)
+                            {
+                                foreach (var cm in Model.Comments)
+                                {
+
+                                    <li class="commentli">
+                                        <!--comment li-->
+                                        <div class="user-img">
+                                            <!--div box to hold user image-->
+                                            <img src="~/images/defaultim.jpg" class="user-img-pic" />
+                                        </div>
+                                        <div class="comment-body">
+                                            <!--body of comment-->
+                                            <h3 class="username">@cm.Email</h3>
+                                            <div class="comment-text">
+                                                <!--comment text stored here-->
+                                                @cm.Msg
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            }
+                            else
+                            {
+                                <li>
+                                    no comments
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Comment Partial View-->
+        <!--Html.Partial("~/Views/Events/AddComment.cshtml", Sp)-->
+        <div style="margin-left: 50px; margin-bottom:10px;">
+            <p>
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+
+
+    </div>
+</div>

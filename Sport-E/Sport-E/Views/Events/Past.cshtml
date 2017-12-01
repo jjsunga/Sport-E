@@ -1,0 +1,151 @@
+﻿@model IEnumerable<Sport_E.Models.Event>
+@section Styles {
+    <link href="@Url.Content("~/Content/pastevents.css")" rel="stylesheet" type="text/css" />
+}
+<script>
+  var toggle = function() {
+      var mydiv = document.getElementById('search');
+  if (mydiv.style.display === 'block' || mydiv.style.display === '')
+    mydiv.style.display = 'none';
+  else
+    mydiv.style.display = 'block'
+  }
+
+  function change()
+  {
+      var elem = document.getElementById("searchButton");
+      if (elem.value == "Search for an event") elem.value = "Hide search";
+      else elem.value = "Search for an event";
+  }
+</script>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Past Events</h2>
+<hr />
+<p>
+
+
+    <div id="search" style="display:none">
+        @using (Html.BeginForm())
+        {
+    <p>
+        @Html.TextBox("searchName", "", new { placeholder = "Event name" }) &nbsp;&nbsp;
+        @Html.TextBox("searchCreator", "", new { placeholder = "Event creator" }) &nbsp;&nbsp;
+        @Html.TextBox("searchCity", "", new { placeholder = "City" }) &nbsp;&nbsp;
+        @Html.TextBox("searchDate", "", new { placeholder = "Date" }) &nbsp;&nbsp;
+        @Html.DropDownList("searchGender", new List<SelectListItem>
+            {
+            new SelectListItem{ Text = "Gender", Value = "" },
+            new SelectListItem{ Text = "Any", Value = "Any" },
+            new SelectListItem{ Text = "Male only", Value = "Male" },
+            new SelectListItem{ Text = "Female only", Value = "Female" }
+            },
+            new
+            {
+                style = "width: 175px;height:26px"
+            }) &nbsp;&nbsp;
+        @Html.DropDownList("searchSkillLevel", new List<SelectListItem>
+            {
+            new SelectListItem{ Text = "Skill level", Value = "" },
+            new SelectListItem{ Text = "Beginner", Value = "Beginner" },
+            new SelectListItem{ Text = "Intermediate", Value = "Intermediate" },
+            new SelectListItem{ Text = "Expert", Value = "Expert" }
+            },
+            new
+            {
+                style = "width: 175px;height:26px"
+            })
+        <br /><br />
+        <input type="submit" value="Go">
+    </p>
+        }
+        </div>
+        <input type="button" id="searchButton" value="Search for an event" onclick="toggle(); change();">
+        <input type="button" value="Reset search" onclick="location.href='@Url.Action("Index", "Events")';return false;">
+
+        </p>
+
+        @if (!Model.Any())
+        {
+            <hr />
+
+            <tr><td>No results</td></tr>
+
+        }
+        else {
+            <table id="uptable">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EventName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EventCreator)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EventDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Capacity)
+                    </th>
+                    <th>
+                        Location
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AgeGroup)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SkillLevel)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </th>
+                    <th>
+
+                    </th>
+                    <th style="display:none;"></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr id="clickable" onclick="this.children[9].children[0].click();">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventCreator)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Capacity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Street),
+                            @Html.DisplayFor(modelItem => item.City),
+                            @Html.DisplayFor(modelItem => item.Province),
+                            @Html.DisplayFor(modelItem => item.PostalCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AgeGroup)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SkillLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gender)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Rate this event", "Rate", new { id = item.Id })
+                        </td>
+                        <td style="display:none;">
+                            <!--Html.ActionLink("Edit", "Edit", new { id = item.Id }) |-->
+                            @Html.ActionLink("Details", "Details", new { id = item.Id })
+                            <!--|
+                            Html.ActionLink("Delete", "Delete", new { id = item.Id })-->
+                        </td>
+                    </tr>
+                }
+            </table>
+        }

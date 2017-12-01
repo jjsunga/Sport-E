@@ -1,0 +1,118 @@
+﻿body {
+    margin: 0px;
+    background-image: url(/images/back.png);
+    background-size: 50%;
+    background-repeat: repeat;
+    display: compact;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Main title screen for home page*/
+.jumbotron {
+    margin-bottom: 0px;
+    height: 300px;
+    margin-top: 39px;
+    background-image: url(../images/sports.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: repeat;
+    /*color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    */
+}
+
+.jumbotron h1 {
+    /*text-shadow: black 0.4em 0.4em 0.4em;*/
+    text-shadow: 6px 6px 8px #000000;
+    font-weight: bold;
+    color: white;
+}
+
+.jumbotron p {
+    /*text-shadow: black 0.4em 0.4em 0.4em;*/
+    text-shadow: 6px 6px 8px #000000;
+    font-weight: bold;
+    color: white;
+}
+
+.sportbox {
+    /*position: absolute;*/
+}
+
+/*sport image container*/
+.thumbnail {
+    position: relative;
+}
+
+    .thumbnail:hover {
+        background-color: #5dade2;
+        opacity: 0.6;
+        /*border-radius:30px;*/
+    }
+
+.sporttext {
+}
+
+.wrapsporttext {
+}
+/*Blue Tag text over sport images*/
+.sporttext {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: auto;
+    text-align: left;
+    background-color: #668cff;
+    color: white;
+    box-shadow: black 0.3em 0.3em 0.3em;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #eeeeee;
+}
+
+/*Page content beside sidebar*/
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+/*Sidebar displayed change*/
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+/*Sidebar style*/
+.sidebar-nav {
+    padding: 0px;
+    outline-style: none;
+}
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #777;
+        }
+
+            .sidebar-nav li a:hover {
+                background: #e2e2e2;
+                color: black;
+            }

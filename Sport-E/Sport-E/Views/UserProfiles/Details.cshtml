@@ -1,0 +1,147 @@
+﻿@model Sport_E.Controllers.UserProfileBase
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Profile";
+    var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+    string email = User.Identity.GetUserName();
+}
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="~/Content/profile.css">
+}
+
+<div id="bg">
+
+    <div id="info">
+
+        <div class="row">
+            <div style="width:auto; height:auto;">
+                <img class="center-block img img-responsive" src="/profilepicturephoto/@Model.Id" alt="ProfilePicture" title="ProfilePicture" height="300" width="300" />
+            </div>
+            @*@Html.DisplayFor(model => model.PhotoUrl)*@
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <span class="name">
+                @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)
+            </span>
+            <h4>
+                @Html.ActionLink("Edit profile", "Edit", new { id = Model.Id }) |
+                @Html.ActionLink("Delete account", "Delete", "Maintenance", new { @email = @email }, null) |
+                @Html.ActionLink("Change Password", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Change Password" })
+            </h4>
+            <br />
+            <span>
+                <b>
+                    @Html.DisplayNameFor(model => model.Description)
+                </b>
+                
+            </span>
+            <br />
+
+            @Html.DisplayFor(model => model.Description)
+        </div>
+        <hr />
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <p>
+                    <span>
+                        <b>
+                            @Html.DisplayNameFor(model => model.Gender) :
+                        </b>
+                    </span>
+
+                    @Html.DisplayFor(model => model.Gender)
+                </p>
+
+
+                <p>
+                    <span>
+                        <b>
+                            @Html.DisplayNameFor(model => model.DateOfBirth) : 
+
+
+                        </b>
+                    </span>
+                    @Html.DisplayFor(model => model.DateOfBirth)
+                </p>
+
+                <p>
+                    <span>
+                        <b>
+                            @Html.DisplayNameFor(model => model.PhoneNumber) : 
+                        </b>
+                    </span>
+
+
+                    @Html.DisplayFor(model => model.PhoneNumber)
+                </p>
+
+            </div>
+            <div class="col-md-6">
+
+
+
+
+
+                <p>
+                    <span>
+                        <b>
+
+                            @Html.DisplayNameFor(model => model.City) : 
+                        </b>
+                    </span>
+
+                    @Html.DisplayFor(model => model.City)
+                </p>
+
+                <p>
+                    <span>
+                        <b>
+                            @Html.DisplayNameFor(model => model.Province) : 
+
+                        </b>
+                    </span>
+                    @Html.DisplayFor(model => model.Province)
+
+                </p>
+                <p>
+                    <span>
+                        <b>
+                            @Html.DisplayNameFor(model => model.Country) : 
+                        </b>
+                    </span>
+
+                    @Html.DisplayFor(model => model.Country)
+
+
+                </p>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>

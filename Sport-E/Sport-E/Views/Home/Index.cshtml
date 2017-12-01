@@ -1,0 +1,192 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{
+    var userAccount = new Sport_E.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
+}
+@section Styles {
+    <link href="@Url.Content("~/Content/backgroundScroll.css")" rel="stylesheet" type="text/css" />
+}
+<script src="~/Scripts/homee.js"></script>
+
+<nav id="homenav">
+    <p style="font-size:20px;">
+        <a id="home" href="#homeSection" style="color:black; padding:25px">Top</a>   |
+        @if (userAccount.IsAuthenticated)
+        {
+            <span><a id="home" href="#sportSearchSection" style="color:black; padding:25px">Search Sport</a>  |</span>
+        }
+        <a id="about" href="#aboutSection" style="color:black; padding:25px">About</a>  |
+        <a id="aboutUs" href="#aboutUsSection" style="color:black; padding:25px">Mission</a>   |
+        <a id="contact" href="#contactUsSection" style="color:black; padding:25px">Contact Us</a>
+    </p>
+</nav>
+
+
+
+<div id="homeSection" class="jumbotron  text-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Sport-E</h1>
+    <p>Organizing sports events has never been easier</p>
+    @if (userAccount.IsAuthenticated)
+    {
+        <!--<a href="#" class="btn btn-primary">Create Event</a>-->
+        @Html.ActionLink("Create Event", "Create", "Events", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Search Events", "Index", "Events", null, new { @class = "btn btn-success" })
+    }
+</div>
+@if (userAccount.IsAuthenticated)
+{
+    <div id="sportSearchSection" class="sportSearch subSection text-center">
+        <br />
+        <h3 style="text-align: center; color:black; font-size:20px;"><u>Quick Search</u></h3>
+
+        <div class="row">
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "soccor" })' class="thumbnail">
+                    <img src="~/images/kick.jpg" alt="Kick.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Soccer
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "basketball" })' class="thumbnail">
+                    <img src="~/images/basketball3.jpeg" alt="basketball2.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Basketball
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "baseball" })' class="thumbnail">
+                    <img src="~/images/base.jpg" alt="baseball.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Baseball
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "swimming" })' class="thumbnail">
+                    <img src="~/images/swimming.jpg" alt="swim.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Swimming
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "cricket" })' class="thumbnail">
+                    <img src="~/images/cricket.jpg" alt="cricket.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Cricket
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 sportbox">
+                <a href='@Url.Action("Index", "Events", new { searchName = "golf" })' class="thumbnail">
+                    <img src="~/images/golf.jpg" alt="golf.jpg" style="width:400px;height:200px;" />
+                    <div class="sporttextbox">
+                        <div class="wrapsporttext">
+                            <p class="sporttext">
+                                Golf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br />
+    </div>
+}
+<div id="aboutSection" class="About sect sectOne text-center" style="color:white; text-shadow: 6px 6px 8px #000000">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style="font-size:30px"><u>What's it about?</u></p>
+    <br />
+    <p style="font-size:20px">Use this website to find, create, join and manage sports events with ease.</p>
+    <p style="font-size:20px">Don't hesitate, register yourself with us now!</p>
+    <p style="font-size:30px"><u>Why use it?</u></p>
+    <br />
+    <p style="font-size:20px">Use it to play your favourite games live, instead of watching some graphics play on your device!</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+<div id="aboutUsSection" class="AboutUs subSection text-center" style="color:black; text-shadow: 6px 6px 8px #ffffff">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style="font-size:30px"><u>Mission</u></p>
+    <br />
+    <p style="font-size:20px">Our mission is to <b>connect people</b> and help them live an active and fun filled life.</p>
+    <h3><u><b>Founders</b></u></h3>
+    <p style="font-size:20px">Jadrian Sunga, Agam Dogra, Abbas Zoeb, Ajla Mehic</p>
+    <h3><u><b>Incorporation</b></u></h3>
+    <p style="font-size:20px">April 12, 2017</p>
+    <h3><u><b>Who we are</b></u></h3>
+    <p style="font-size:20px">We are computer science students at seneca college, graduating in 2018.</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+<div id="contactUsSection" class="ContactUs sect sectTwo text-center" style="color:white; text-shadow: 6px 6px 8px #000000">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style="font-size:30px"><u>Contact Us</u></p>
+    <br />
+    <p style="font-size:20px">Email - CS@SportE.com</p>
+    <p style="font-size:20px">Address - 70 The Pond Road, North York, Ontario, L4E 6A7</p>
+    <p style="font-size:20px">Phone - (647)891-2812</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+<br />
+
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Sport_E.Controllers.NotificationBase>
+@section Styles {
+    <link href="@Url.Content("~/Content/readnotifications.css")" rel="stylesheet" type="text/css" />
+}
+@{
+    ViewBag.Title = "All Notifications";
+}
+
+<h2>All Notifications</h2>
+
+<div class="form-actions no-color">
+    @Html.ActionLink("New Notifications", "Details")
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ToEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedByEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Read)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedByEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Read)
+        </td>
+
+    </tr>
+}
+
+</table>

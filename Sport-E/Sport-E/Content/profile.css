@@ -1,0 +1,44 @@
+﻿#bg {
+    background-color: #ffffff;
+    border: solid 1px #a1a1a1;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+div.eventinfo {
+    margin:50px;
+    text-align: left;
+}
+
+#info {
+    margin:50px;
+    text-align: center;
+}
+
+
+
+.left {
+    float:left;
+    margin-right: 20px;
+}
+
+.right {
+    float:right;
+}
+
+.img {
+    max-width: 40%; 
+    height: auto; 
+    width: auto;
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
+
